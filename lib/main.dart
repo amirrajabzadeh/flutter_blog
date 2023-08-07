@@ -36,8 +36,14 @@ class HomeScreen extends StatelessWidget {
                     color: Color.fromARGB(255, 57, 187, 163),
                     fontFamily: 'alger'),
               ),
+              SizedBox(
+                height: 20.0,
+              ),
               Image(
                 image: AssetImage('images/welcome.jpg'),
+              ),
+              SizedBox(
+                height: 20.0,
               ),
               OutlinedButton(
                 style: OutlinedButton.styleFrom(
@@ -49,8 +55,27 @@ class HomeScreen extends StatelessWidget {
                   foregroundColor: Color.fromARGB(255, 57, 187, 163),
                 ),
                 onPressed: () {},
-                child: Text('Register'),
+                child: Text(
+                  'Login',
+                  style: TextStyle(
+                    fontSize: 16,
+                  ),
+                ),
               ),
+              TextButton(
+                style: TextButton.styleFrom(
+                  foregroundColor: Colors.white,
+                  backgroundColor: Color.fromARGB(255, 57, 187, 163),
+                  minimumSize: Size(200.0, 40.0),
+                ),
+                onPressed: () {},
+                child: Text(
+                  'Register',
+                  style: TextStyle(
+                    fontSize: 16,
+                  ),
+                ),
+              )
             ],
           ),
         ),

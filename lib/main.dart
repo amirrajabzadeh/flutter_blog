@@ -63,7 +63,7 @@ class HomeScreen extends StatelessWidget {
               ),
               OutlinedButton(
                 style: OutlinedButton.styleFrom(
-                  minimumSize: Size(200.0, 40.0),
+                  minimumSize: Size(200.0, 43.0),
                   side: BorderSide(
                     color: Color.fromARGB(255, 57, 187, 163),
                     width: 2.0,
@@ -78,20 +78,19 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              TextButton(
-                style: TextButton.styleFrom(
-                  foregroundColor: Colors.white,
-                  backgroundColor: Color.fromARGB(255, 57, 187, 163),
-                  minimumSize: Size(200.0, 40.0),
-                ),
-                onPressed: () {},
-                child: Text(
-                  'Register',
-                  style: TextStyle(
-                    fontSize: 16,
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Color.fromARGB(255, 57, 187, 163),
+                    foregroundColor: Colors.white,
+                    minimumSize: Size(200.0, 43.0),
                   ),
-                ),
-              )
+                  onPressed: () {},
+                  child: Text(
+                    'Register',
+                    style: TextStyle(
+                      fontSize: 16,
+                    ),
+                  ))
             ],
           ),
         ),

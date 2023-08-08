@@ -24,17 +24,33 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 255, 231, 221),
       body: SafeArea(
-        child: Center(
+        child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(
-                'Welcome',
-                style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 50.0,
-                    color: Color.fromARGB(255, 57, 187, 163),
-                    fontFamily: 'alger'),
+              SizedBox(
+                height: 20.0,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    'Welcome',
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 50.0,
+                        color: Color.fromARGB(255, 57, 187, 163),
+                        fontFamily: 'alger'),
+                  ),
+                  SizedBox(
+                    width: 14.0,
+                  ),
+                  Icon(
+                    Icons.login,
+                    size: 40.0,
+                    color: Color.fromARGB(255, 225, 60, 76),
+                  )
+                ],
               ),
               SizedBox(
                 height: 20.0,

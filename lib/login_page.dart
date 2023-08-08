@@ -82,7 +82,7 @@ class LoginPage extends StatelessWidget {
               ),
               TextButton(
                 style: TextButton.styleFrom(
-                  foregroundColor: Color.fromARGB(255, 57, 187, 163),
+                  foregroundColor: Color.fromARGB(255, 225, 60, 76),
                 ),
                 onPressed: () {
                   navigateToPage(context, ForgotPasswordPage());
